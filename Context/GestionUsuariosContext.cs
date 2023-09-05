@@ -26,5 +26,14 @@ public class GestionUsuariosContext : DbContext
             usuario.Property(e => e.UsuarioFechaCreacion).IsRequired();
             usuario.Property(e => e.UsuarioFechaActualizacion).IsRequired();
         });
+
+        modelBuilder.Entity<Rol>(rol =>
+        {
+            rol.ToTable("Rol");
+
+            rol.HasKey(e => e.RolId);
+
+            rol.Property(e => e.RolNombre).IsRequired();
+        });
     }
 }
