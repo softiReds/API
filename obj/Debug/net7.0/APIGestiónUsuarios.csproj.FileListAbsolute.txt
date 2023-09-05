@@ -69,3 +69,8 @@ C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Proyectos\C#\APIGestió
 C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Proyectos\C#\APIGestiónUsuarios\obj\Debug\net7.0\APIGestiónUsuarios.pdb
 C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Proyectos\C#\APIGestiónUsuarios\obj\Debug\net7.0\APIGestiónUsuarios.genruntimeconfig.cache
 C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Proyectos\C#\APIGestiónUsuarios\obj\Debug\net7.0\ref\APIGestiónUsuarios.dll
+C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Proyectos\C#\APIGestiónUsuarios\bin\Debug\net7.0\Humanizer.dll
+C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Proyectos\C#\APIGestiónUsuarios\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Proyectos\C#\APIGestiónUsuarios\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Proyectos\C#\APIGestiónUsuarios\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Proyectos\C#\APIGestiónUsuarios\bin\Debug\net7.0\System.CodeDom.dll
