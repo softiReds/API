@@ -35,5 +35,15 @@ public class GestionUsuariosContext : DbContext
 
             rol.Property(e => e.RolNombre).IsRequired();
         });
+
+        modelBuilder.Entity<UsuarioRol>(usuarioRol =>
+        {
+            usuarioRol.ToTable("UsuarioRol");
+
+            usuarioRol.HasKey(e => e.UsuarioRolId);
+
+            usuarioRol.HasOne(e => e.Usuario).WithOne(e => e.UsuarioRol).HasForeignKey<Usuario>(e => e.UsuarioId);
+            usuarioRol.HasOne(e => e.Rol).WithOne(e => e.UsuarioRol).HasForeignKey<Rol>(e => e.RolId);
+        });
     }
 }
