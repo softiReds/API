@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZO8xieBo81PhjAnzl6EjG63ZdfmnI34ERk9W/BjGLTB3T/PkkdlFWzf6K0ZyGx5JP+ltpUDuFQEQWLv0AOJDuA==",
+  "dgSpecHash": "ptjkfNWibgKRwcLtS5FxZKexMQFp21lAuvigby+LQAj/8vMEmJny/C8bLZQjP3lw+0ZvVWqwEmUTT/mjnfQ1Vg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\santi\\OneDrive\\Documentos\\SantiagoRojas\\Estudio\\Proyectos\\C#\\APIGestiónUsuarios\\APIGestiónUsuarios.csproj",
+  "projectFilePath": "c:\\Users\\santi\\OneDrive\\Documentos\\SantiagoRojas\\Estudio\\Proyectos\\C#\\APIGestiónUsuarios\\APIGestiónUsuarios.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\santi\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\santi\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
