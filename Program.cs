@@ -1,4 +1,5 @@
 using APIGestiónUsuarios.Context;
+using APIGestiónUsuarios.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSqlServer<GestionUsuariosContext>(builder.Configuration.GetConnectionString("LocalConnection"));
+
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 
 var app = builder.Build();
 
