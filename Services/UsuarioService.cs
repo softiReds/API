@@ -11,6 +11,9 @@ public class UsuarioService : IUsuarioService
 
     public async Task Post(Usuario usuario)
     {
+        usuario.UsuarioId = Guid.NewGuid();
+        usuario.UsuarioFechaCreacion = DateTime.Now;
+
         await _dbContext.Usuarios.AddAsync(usuario);
         await _dbContext.SaveChangesAsync();
     }
@@ -28,7 +31,7 @@ public class UsuarioService : IUsuarioService
             usuarioActualizar.UsuarioCorreoElectronico = usuario.UsuarioCorreoElectronico;
             usuarioActualizar.UsuarioContraseña = usuario.UsuarioContraseña;
             usuarioActualizar.UsuarioFechaCreacion = usuario.UsuarioFechaCreacion;
-            usuarioActualizar.UsuarioFechaActualizacion = usuario.UsuarioFechaActualizacion;
+            usuarioActualizar.UsuarioFechaActualizacion = DateTime.Now;
 
             await _dbContext.SaveChangesAsync();
         }
