@@ -12,7 +12,7 @@ public class UsuarioController : ControllerBase
 
     public UsuarioController(IUsuarioService service) => _service = service;
 
-    [HttpGet]
+    [HttpPost]
     public IActionResult Post([FromBody] Usuario usuario)
     {
         _service.Post(usuario);
