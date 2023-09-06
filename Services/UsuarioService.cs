@@ -15,10 +15,7 @@ public class UsuarioService : IUsuarioService
         await _dbContext.SaveChangesAsync();
     }
 
-    public IEnumerable<Usuario> Get()
-    {
-        return _dbContext.Usuarios;
-    }
+    public IEnumerable<Usuario> Get() => _dbContext.Usuarios;
 
     public async Task Put(Usuario usuario, Guid id)
     {
@@ -52,8 +49,8 @@ public class UsuarioService : IUsuarioService
 
 public interface IUsuarioService
 {
-    IEnumerable<Usuario> Get();
     Task Post(Usuario usuario);
+    IEnumerable<Usuario> Get();
     Task Put(Usuario usuario, Guid id);
     Task Delete(Guid id);
 }
