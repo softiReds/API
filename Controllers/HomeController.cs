@@ -1,20 +1,21 @@
 using APIGestiónUsuarios.Context;
+using APIGestiónUsuarios.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace APIGestiónUsuarios.Controllers;
 
 [ApiController]
-[Route("home")]
+[Route("[controller]")]
 public class HomeController : ControllerBase
 {
     private readonly GestionUsuariosContext _dbContext;
-
-    public HomeController(GestionUsuariosContext dbContext) => _dbContext = dbContext;
+    private readonly IHomeService _service;
+    public HomeController(IHomeService service) => _service = service;
 
     [HttpGet]
     public IActionResult CreateDataBase()
     {
-        _dbContext.Database.EnsureCreated();
+        _service.CreateDatabase(_dbContext);
         return Ok();
     }
 }

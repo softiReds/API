@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSqlServer<GestionUsuariosContext>(builder.Configuration.GetConnectionString("LocalConnection"));
 
+builder.Services.AddScoped<IHomeService, HomeService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 
 var app = builder.Build();
