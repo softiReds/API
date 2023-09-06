@@ -67,8 +67,8 @@ public class GestionUsuariosContext : DbContext
 
             usuarioRol.HasKey(e => e.UsuarioRolId);
 
-            usuarioRol.HasOne(e => e.Usuario).WithOne(e => e.UsuarioRol).HasForeignKey<Usuario>(e => e.UsuarioId);
-            usuarioRol.HasOne(e => e.Rol).WithOne(e => e.UsuarioRol).HasForeignKey<Rol>(e => e.RolId);
+            usuarioRol.HasOne(e => e.Usuario).WithOne(e => e.UsuarioRol).HasForeignKey<UsuarioRol>(e => e.UsuarioId);
+            usuarioRol.HasOne(e => e.Rol).WithOne(e => e.UsuarioRol).HasForeignKey<UsuarioRol>(e => e.RolId);
 
             usuarioRol.HasData(usuariosRolInit);
         });
