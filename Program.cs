@@ -14,6 +14,7 @@ builder.Services.AddSqlServer<GestionUsuariosContext>(builder.Configuration.GetC
 
 builder.Services.AddScoped<IHomeService, HomeService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+builder.Services.AddScoped<IRolService, RolService>();
 
 var app = builder.Build();
 
